@@ -7,4 +7,22 @@
 
 $main-font     :'Roboto', sans-serif;
 $secondary-font:'Roboto Mono', monospace;
-$special-font  : 'Product Sans Regular';
+$special-font  :'Product Sans Regular';
+
+$fw-current    :500;
+$font-base     :16px;
+$font-sizes    :(fsize-1: 2.25 * $font-base,
+                 fsize-2: 1.5 * $font-base,
+                 fsize-3: 1.25 * $font-base,
+                 fsize-4: $font-base,
+                 fsize-5: 0.875 * $font-base);
+
+@mixin fontSizes($type, $size){
+  .#{$type} {
+    font-size: $size;
+  }
+}
+
+@each $type, $size in $font-sizes {
+  @include fontSizes($type, $size);
+}

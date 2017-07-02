@@ -1,47 +1,66 @@
+/*Fuentes tipográficas*/
 @import "partials/_fonts";
 
+/*Reseteo inicial de estilos*/
 @import "partials/_initialReset";
 
+/*Sistema de grillas*/
 @import "partials/_gridSystem";
 
-//Reutilizables
+// Fuentes tipográficas
+@import "partials/_colors";
+
+/*Clases reutilizables*/
+.element-mb {
+  margin-bottom: 1.5rem;
+}
+
+.current-bold {
+  font-weight: $fw-current;
+}
+
+.section-pt {
+  padding-top: 4rem;
+}
+
 .text-center {
   text-align: center;
 }
 
+/*CONTENEDOR PRINCIPAL*/
 .main-container {
+  background-color: $c-bg;
   font-family: $main-font;
   padding: 0 2rem;
 }
 
-//HEADER
+/*HEADER*/
 .header {
-  padding-top: 4rem;
+  @extend .section-pt;
 }
 
 .logo {
-  margin-bottom: 1.5rem;
+  @extend .text-center;
+  @extend .element-mb;
 }
 
-//MENU
 .navbar {
   height: 50px;
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  @extend .element-mb;
 }
 
 .menu {
+  @extend .current-bold;
   display: flex;
-  font-size: 0.875rem;
-  font-weight: 500;
   justify-content: center;
   &__item {
-    color: #414549;
+    color: $c-text;
     padding: 0 1.5rem 1.5rem;
     text-decoration: none;
   }
   &__item:hover {
-    border-bottom: 0.25rem solid #cccccc;
+    border-bottom: 0.25rem solid $c-text-lighten;
   }
 }
 
@@ -61,35 +80,28 @@
 }
 
 .featured {
-  padding-top: 4rem;
-  color: #424242;
+  @extend .section-pt;
+  color: $c-title;
   &__image {
-    margin-bottom: 1.5rem;
+    @extend .element-mb;
     width: 100%;
   }
   &__header {
-    font-size: 2.25em;
     font-weight: normal;
     font-family: $special-font;
-    margin-bottom: 1.5rem;
+    @extend .element-mb;
   }
   &__subheader {
-    font-size: 1.25em;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
+    @extend .current-bold;
+    @extend .element-mb;
   }
   &__copy {
     line-height: 1.5em;
-    margin-bottom: 1.5rem;
+    @extend .element-mb;
   }
   &__tag {
-    color: #5f6368;
+    color: $c-tag;
     font-family: $secondary-font;
-    font-size: 0.875rem;
-    margin-bottom: 1.5rem;
+    @extend .element-mb;
   }
-}
-
-.news-feed {
-  padding-top: 4rem;
 }
