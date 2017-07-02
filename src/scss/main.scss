@@ -100,10 +100,23 @@
   &__header {
     border-top: 0.25rem solid $c-link;
     color: #424242;
-    font-family: "Product Sans Regular";
-    font-weight: 500;
     padding-top: 2.5rem;
-    margin-bottom: 1.5rem;}
+    margin-bottom: 1.5rem;
+    &-title {
+      font-family: $special-font;
+      @extend .current-bold;
+    }
+    &-link {
+      padding-right: 2rem;
+      text-align: right;
+    }
+    &-link a{
+      color: $c-link;
+      @extend .current-bold;
+      line-height: 2rem;
+      text-decoration: none;
+    }
+  }
   &__column-left {
     padding-right: 2rem;}
   &__column-right {

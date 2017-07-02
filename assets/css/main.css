@@ -229,7 +229,7 @@
 .element2-mb, .new__title, .new__image, .new__text {
   margin-bottom: 1rem; }
 
-.current-bold, .menu, .featured__subheader {
+.current-bold, .menu, .featured__subheader, .news-feed__header-title, .news-feed__header-link a {
   font-weight: 500; }
 
 .section-pt, .header, .featured, .news-feed {
@@ -290,10 +290,17 @@
 .news-feed__header {
   border-top: 0.25rem solid #4285f4;
   color: #424242;
-  font-family: "Product Sans Regular";
-  font-weight: 500;
   padding-top: 2.5rem;
   margin-bottom: 1.5rem; }
+  .news-feed__header-title {
+    font-family: "Product Sans Regular"; }
+  .news-feed__header-link {
+    padding-right: 2rem;
+    text-align: right; }
+  .news-feed__header-link a {
+    color: #4285f4;
+    line-height: 2rem;
+    text-decoration: none; }
 .news-feed__column-left {
   padding-right: 2rem; }
 .news-feed__column-right {
