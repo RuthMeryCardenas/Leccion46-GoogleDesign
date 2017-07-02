@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@font-face {
+  font-family: 'Product Sans';
+  src: url("fonts/Product Sans Regular.ttf"); }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 .row {
   overflow: auto; }
 
@@ -193,5 +204,47 @@
   .column-lg-12 {
     float: left;
     width: 100%; } }
+
+.text-center {
+  text-align: center; }
+
+.main-container {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding: 0 2rem; }
+
+.header {
+  padding-top: 4.5rem; }
+
+.navbar {
+  height: 50px;
+  margin-top: 1.5rem; }
+
+.menu {
+  display: flex;
+  font-weight: 500;
+  justify-content: center; }
+.menu__item {
+  color: #414549;
+  padding: 0 1.5rem 1.5rem;
+  text-decoration: none; }
+.menu__item:hover {
+  border-bottom: 0.25rem solid #cccccc; }
+
+.search {
+  position: absolute;
+  right: 0; }
+.search__button {
+  background-image: url(../img/search-icon.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: 0;
+  height: 1.5rem;
+  margin-right: 1.5rem;
+  outline: 0;
+  width: 1.5rem; }
+
+.featured {
+  padding-top: 4.5rem; }
 
 /*# sourceMappingURL=main.css.map */

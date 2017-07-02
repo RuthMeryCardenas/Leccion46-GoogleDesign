@@ -1,2 +1,60 @@
-// Partials
+@import "partials/_fonts";
+
+@import "partials/_initialReset";
+
 @import "partials/_gridSystem";
+
+//Reutilizables
+.text-center {
+  text-align: center;
+}
+
+.main-container {
+  font-family: $main-font;
+  font-size: 14px;
+  padding: 0 2rem;
+}
+
+//HEADER
+.header {
+  padding-top: 4.5rem;
+}
+
+//MENU
+.navbar {
+  height: 50px;
+  margin-top: 1.5rem;
+}
+
+.menu {
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  &__item {
+    color: #414549;
+    padding: 0 1.5rem 1.5rem;
+    text-decoration: none;
+  }
+  &__item:hover {
+    border-bottom: 0.25rem solid #cccccc;
+  }
+}
+
+.search {
+  position: absolute;
+  right: 0;
+  &__button{
+    background-image: url(../img/search-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 0;
+    height: 1.5rem;
+    margin-right: 1.5rem;
+    outline: 0;
+    width: 1.5rem;
+  }
+}
+
+.featured {
+  padding-top: 4.5rem;
+}
