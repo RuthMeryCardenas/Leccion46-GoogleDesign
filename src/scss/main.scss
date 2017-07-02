@@ -11,13 +11,12 @@
 
 .main-container {
   font-family: $main-font;
-  font-size: 14px;
   padding: 0 2rem;
 }
 
 //HEADER
 .header {
-  padding-top: 4.5rem;
+  padding-top: 4rem;
 }
 
 //MENU
@@ -42,6 +41,7 @@
 
 .search {
   position: absolute;
+  margin-right: 2rem;
   right: 0;
   &__button{
     background-image: url(../img/search-icon.png);
@@ -49,12 +49,11 @@
     background-size: 100%;
     border: 0;
     height: 1.5rem;
-    margin-right: 1.5rem;
     outline: 0;
     width: 1.5rem;
   }
 }
 
 .featured {
-  padding-top: 4.5rem;
+  padding-top: 4rem;
 }
