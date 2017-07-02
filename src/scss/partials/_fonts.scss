@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@font-face {
+  font-family: 'Product Sans';
+  src: url("fonts/Product Sans Regular.ttf");
+}
+
+$main-font     :'Roboto', sans-serif;
+$secondary-font:'Roboto Mono', monospace;
+$special-font  : 'Product Sans';
