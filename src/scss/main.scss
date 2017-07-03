@@ -158,3 +158,41 @@
   }
 
 }
+
+/*LIBRERÍA*/
+.library {
+  @extend .section-pt;
+  &__head-line {
+    border-bottom: 0.25rem solid $c-link;
+    padding-bottom: 2.75rem;
+    margin-bottom: 2rem;}
+  &__layout {
+    margin-left: -2rem;
+    width: calc(100% + 4rem);
+    overflow: auto;}
+}
+
+.article {
+  float: left;
+  padding: 2rem;
+  width: 50%;
+  &__image{
+    margin-bottom: 1.5rem;
+    width: 100%;}
+  &__title {
+    color: $c-title;
+    font-family: $special-font;
+    line-height: 2rem;}
+  &__content {
+    color: $c-title;
+    line-height: 1.25rem;
+    margin-bottom: 1.25rem;}
+  &__tag {
+    color: $c-tag;
+    &__redirection {
+      background-image: url(../img/icon-redirection.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      padding: 8px 14px;}
+  }
+}

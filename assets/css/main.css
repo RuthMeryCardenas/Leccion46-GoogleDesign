@@ -232,7 +232,7 @@
 .current-bold, .menu, .featured__subheader, .news-feed__header-title, .news-feed__header-link a {
   font-weight: 500; }
 
-.section-pt, .header, .featured, .news-feed {
+.section-pt, .header, .featured, .news-feed, .library {
   padding-top: 4rem; }
 
 .text-center, .logo {
@@ -334,5 +334,38 @@
     text-align: right; }
     .newsletter__cta-image img {
       width: 75%; }
+
+/*LIBRERÍA*/
+.library__head-line {
+  border-bottom: 0.25rem solid #4285f4;
+  padding-bottom: 2.75rem;
+  margin-bottom: 2rem; }
+.library__layout {
+  margin-left: -2rem;
+  width: calc(100% + 4rem);
+  overflow: auto; }
+
+.article {
+  float: left;
+  padding: 2rem;
+  width: 50%; }
+  .article__image {
+    margin-bottom: 1.5rem;
+    width: 100%; }
+  .article__title {
+    color: #424242;
+    font-family: "Product Sans Regular";
+    line-height: 2rem; }
+  .article__content {
+    color: #424242;
+    line-height: 1.25rem;
+    margin-bottom: 1.25rem; }
+  .article__tag {
+    color: #5f6368; }
+    .article__tag__redirection {
+      background-image: url(../img/icon-redirection.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      padding: 8px 14px; }
 
 /*# sourceMappingURL=main.css.map */
